@@ -1,0 +1,27 @@
+{
+  "name": "CS290-Final-Project",
+  "version": "1.0.0",
+  "description": "Final project incorporating everything learned so far.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "handlebars views/partials/post.handlebars -f public/postTemplate.js",
+    "prestart": "npm run build",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/OSU-CS290-Sp2017/final-project-cs-290-final-project.git"
+  },
+  "author": "Cole Jones",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/OSU-CS290-Sp2017/final-project-cs-290-final-project/issues"
+  },
+  "homepage": "https://github.com/OSU-CS290-Sp2017/final-project-cs-290-final-project#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.10"
+  }
+}
