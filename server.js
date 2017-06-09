@@ -17,7 +17,7 @@ app.get('/', function (req, res, next) {
 	};
 	
 	res.render('postPage', templateArgs);
-}
+});
 
 app.use(express.static(path.join(__dirname, 'public')));
 
