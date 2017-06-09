@@ -1,5 +1,6 @@
 [
 	{
+		"index": "0",
 		"category": "Computers",
 		"date": "6/7/17",
 		"location": "Philomath, OR",
@@ -14,6 +15,7 @@
 		"image3": ""
 	},
 	{
+		"index": "1",
 		"category": "Computers",
 		"date": "6/7/17",
 		"location": "Philomath, OR",
@@ -28,6 +30,7 @@
 		"image3": "http://i.imgur.com/nEefNnW.jpg"
 	},
 	{
+		"index": "2",
 		"category": "Computers",
 		"date": "6/2/17",
 		"location": "Albany, OR",
@@ -42,6 +45,7 @@
 		"image3": ""
 	},
 	{
+		"index": "3",
 		"category": "Computers",
 		"date": "6/7/17",
 		"location": "Philomath, OR",
@@ -56,6 +60,7 @@
 		"image3": ""
 	},
 	{
+		"index": "4",
 		"category": "Games",
 		"date": "5/22/17",
 		"location": "Eugene, OR",
@@ -70,6 +75,7 @@
 		"image3": ""
 	},
 	{
+		"index": "5",
 		"category": "Pets - Missing",
 		"date": "6/5/17",
 		"location": "Corvallis, OR",
@@ -84,6 +90,7 @@
 		"image3": ""
 	},
 	{
+		"index": "6",
 		"category": "Services",
 		"date": "5/1/16",
 		"location": "Portland, OR",
