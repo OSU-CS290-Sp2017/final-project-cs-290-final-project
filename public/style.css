@@ -1,0 +1,18 @@
+.leftbar {
+	position: absolute;
+	left:0; top:0; bottom:0;
+	width: 200px;
+	background-color: green;
+}
+
+.post-container {
+	position: absolute;
+	left:200px; top:0; right:0; bottom:0;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: red;
+}
+
+.error-container {
+	background-color: red;
+}

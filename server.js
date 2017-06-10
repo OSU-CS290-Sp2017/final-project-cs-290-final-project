@@ -9,17 +9,28 @@ var port = process.env.PORT || 3000;
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
+// Edit this so that it leads to a blank page with a button to direct to /posts/ ??? Maybe a bad idea
 app.get('/', function (req, res, next) {
 	console.log("== URL params for request:", req.params);
-	console.log("== postData:", postsData);
+	//console.log("== postData:", postsData);
 	var templateArgs = {
 		posts: postsData
 	};
 	
-	res.render('postPage', templateArgs);
+	res.render('postThumbPage', templateArgs);
 });
 
-app.get('/:post', function (req, res, next) {
+app.get('/posts/', function (req, res, next) {
+	console.log("== URL params for request:", req.params);
+	//console.log("== postData:", postsData);
+	var templateArgs = {
+		posts: postsData
+	};
+	
+	res.render('postThumbPage', templateArgs);
+});
+
+app.get('/posts/:post', function (req, res, next) {
 	console.log("== URL params for request:", req.params);
 	console.log("== req.params.post:", req.params.post);
 	

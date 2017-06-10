@@ -1,16 +1,33 @@
 <article class="post">
-	<div class="post-thumbnail">
-		<p class="post-thumb-title">
-			<a href="{{index}}">{{title}}</a>
-		</p>
-		<p class="post-thumb-category">
-			{{category}}
-		</p>
-		<p class="post-thumb-date">
-			{{date}}
-		</p>
-		<p class="post-thumb-price">
-			{{price}}
-		</p>
-	</div>
+	<p class="post-title">
+		{{title}}
+	</p>
+	<p class="post-author">
+		Posted By: {{author}}
+	</p>
+	<p class="post-category">
+		Category: {{category}}
+	</p>
+	<p class="post-date">
+		Post Date: {{date}}
+	</p>
+	<p class="post-location">
+		Location: {{location}}
+	</p>
+	<p class="post-price">
+		{{price}}
+	</p>
+	
+	<!-- Make a container to hold the contact info -->
+	<p>
+		Phone: {{phone}}
+	</p>
+	<p>
+		E-mail: {{email}}
+	</p>
+	
+	<!-- Images -->
+	<img src="{{{image1}}}">
+	<img src="{{{image2}}}">
+	<img src="{{{image3}}}">
 </article>
