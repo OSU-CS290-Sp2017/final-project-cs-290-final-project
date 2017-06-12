@@ -17,17 +17,22 @@
 	<p class="post-price">
 		{{price}}
 	</p>
-	
-	<!-- Make a container to hold the contact info -->
-	<p>
+	<p class="post-phone">
 		Phone: {{phone}}
 	</p>
-	<p>
+	<p class="post-email">
 		E-mail: {{email}}
 	</p>
 	
-	<!-- Images -->
-	<img src="{{{image1}}}">
-	<img src="{{{image2}}}">
-	<img src="{{{image3}}}">
+	<br>
+	<p>Images:</p>
+	<div class="img-container">
+		<a href="{{{image1}}}"><img src="{{{image1}}}"></a>
+	</div>
+	<div class="img-container">
+		<a href="{{{image2}}}"><img src="{{{image2}}}"></a>
+	</div>
+	<div class="img-container">
+		<a href="{{{image3}}}"><img src="{{{image3}}}"></a>
+	</div>
 </article>
