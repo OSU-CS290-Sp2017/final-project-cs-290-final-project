@@ -3,36 +3,39 @@
 		{{title}}
 	</p>
 	<p class="post-author">
-		Posted By: {{author}}
+		<b>Posted By:</b> <a href="#">{{author}}</a>
 	</p>
 	<p class="post-category">
-		Category: {{category}}
+		<b>Category:</b> {{category}}
 	</p>
 	<p class="post-date">
-		Post Date: {{date}}
+		<b>Post Date:</b> {{date}}
 	</p>
 	<p class="post-location">
-		Location: {{location}}
+		<b>Location:</b> {{location}}
 	</p>
 	<p class="post-price">
-		{{price}}
+		<b>Price:</b> {{price}}
 	</p>
 	<p class="post-phone">
-		Phone: {{phone}}
+		<b>Phone:</b> {{phone}}
 	</p>
 	<p class="post-email">
-		E-mail: {{email}}
+		<b>E-mail:</b> {{email}}
 	</p>
-	
 	<br>
-	<p>Images:</p>
+	<p class="post-body">
+		{{body}}
+	<p>
+	<br>
+	<p><b>Images:</b></p>
 	<div class="img-container">
-		<a href="{{{image1}}}"><img src="{{{image1}}}"></a>
+		<a href="{{{image1}}}" target="_blank"><img src="{{{image1}}}"></a>
 	</div>
 	<div class="img-container">
-		<a href="{{{image2}}}"><img src="{{{image2}}}"></a>
+		<a href="{{{image2}}}" target="_blank"><img src="{{{image2}}}"></a>
 	</div>
 	<div class="img-container">
-		<a href="{{{image3}}}"><img src="{{{image3}}}"></a>
+		<a href="{{{image3}}}" target="_blank"><img src="{{{image3}}}"></a>
 	</div>
 </article>

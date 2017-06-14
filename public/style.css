@@ -1,8 +1,7 @@
-/* Most colors used here are placeholders */
 body {
 	font-family: Georgia, "Times New Roman", Serif;
 	margin: 0;
-	background-color: #dcdcdc;
+	background-color: rgba(221, 255, 221, 0.52);
 }
 
 a {
@@ -11,7 +10,7 @@ a {
 }
 
 a:hover, a:focus {
-	color: yellow;
+	color: rgba(221, 255, 221, 0.52);
 }
 
 a:focus {
@@ -54,7 +53,30 @@ ul {
 	padding: 10px;
 	border-radius: 0 30px 30px 0;
 	width: 250px;
-	background-color: green;
+	background-color: rgba(102, 133, 53, 0.68);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.leftbar2 {
+	position: absolute;
+	left:10px; top:230px;
+	padding: 10px;
+	border-radius: 0 30px 30px 0;
+	width: 250px;
+	background-color: rgba(102, 133, 53, 0.68);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bottombar {
+	position: absolute;
+	top: 96%;
+	bottom: 4%;
+	left: 5px;
+	font-size: 9pt;
+}
+
+.bottombar p {
+	color: black;
 }
 
 .post-container {
@@ -65,10 +87,14 @@ ul {
 	display: flex;
 	overflow: auto;
 	flex-wrap: wrap;
-	background-color: red;
-	justify-content: space-between;
+	background-color: rgba(102, 133, 53, 0.68);
 	flex-direction: row;
 	align-content: flex-start;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.post-container h1, h4, p {
+	color: #fff;
 }
 
 .post-thumbnail {
@@ -81,54 +107,56 @@ ul {
 	min-width: 250px;
 	padding: 5px;
 	border-radius: 10px;
-	border: 2px solid black;
 	justify-content: space-between;
+	background-color: rgba(193, 209, 172, 0.62);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.post-thumb-title,
-.post-thumb-category,
-.post-thumb-date,
-.post-thumb-price {
-	border: 1px solid black;
+.post-thumbnail p {
+	color: #fff;
 }
 
-.post-thumb-title {
-	font-weight: 600;
-}
-/*
-.post-thumb-category {
-	
+.site-title {
+	color: #fff;
 }
 
-.post-thumb-date {
-	
+.post {
+	max-width: 700px;
+	color: #fff;
 }
-
-.post-thumb-price{
-	
-}
-*/
 
 .post-title {
 	font-weight: 600;
 	font-size: 32pt;
+	color: #fff;
+}
+
+.post-body {
+	max-width: 700px;
 }
 
 .error-container {
-	margin-top: 50px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 	text-align: center;
+	background-color: rgba(102, 133, 53, 0.68);
 }
 
 .error-container h2 {
 	margin: 10px 0;
 	font-size: 96px;
 	font-weight: 100;
+	color: #fff;
 }
 
 .error-container h3 {
 	margin: 10px 0;
 	font-size: 36px;
 	font-weight: 400;
+	color: #fff;
 }
 
 .img-container {
@@ -144,36 +172,18 @@ ul {
 	border-radius: 5px;
 }
 
-.text-container {
-	position: absolute;
-	left:290px; top:10px; right:10px; bottom:10px;
-	padding: 10px;
-	border-radius: 30px 0 0 30px;
-	overflow: auto;
-	background-color: red;
-}
-
 .hidden {
 	display: none;
 }
 
-
-/* Fix this later
 #create-post-button:hover,
 #create-post-button:focus {
-  right: 27px;
-  bottom: 27px;
-  height: 66px;
-  width: 66px;
-  border-radius: 33px;
-  font-size: 40px;
-  background-color: #319df6;
+  background-color: rgba(221, 255, 221, 0.52);
 }
 
 #create-post-button:focus {
   outline: none;
 }
-*/
 
 #modal-backdrop {
   position: fixed;
@@ -187,12 +197,13 @@ ul {
 
 #create-post-modal {
   position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 10%;
+  left: 25%;
   z-index: 1010;
-  overflow: scroll;
+  overflow: auto;
+  background-color: rgba(221, 255, 221, 0.52);
+  color: #fff;
+  border-radius: 5px;
 }
 
 .modal-dialog {
@@ -224,6 +235,32 @@ ul {
   background: none;
   padding: 0;
   cursor: pointer;
+  color: #fff;
+}
+
+.modal-footer button {
+  font-size: 20px;
+  background-color: rgba(221, 255, 221, 0.52);
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.modal-footer .modal-cancel-button:hover {
+  background-color: #eee;
+}
+
+.modal-footer .modal-accept-button {
+  background-color: rgba(102, 133, 53, 0.68);
+  color: #fff;
+}
+
+.modal-footer .modal-accept-button:hover {
+  background-color: green;
 }
 
 .modal-body {
